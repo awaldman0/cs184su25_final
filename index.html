@@ -44,21 +44,34 @@
 	-->
 
 			<h2>Problem Description</h2>
-
+				We aim to simulate the behaviors of fluids and their responses to external simuli.
+				Some of the most fundamental problems to solve relate to the physical nature of fluids such as incompressibility, modeling velocity, pressure, density, viscosity and more.
+				Additionally computational challenges also arise with simulating large amounts of particles so finding efficient ways to solve the navier stokes equation for example will be part of the challenge.
 			<h2>Goals and Deliverables</h2>
 			<p>Ideally, we plan to deliver an interactive experience that allows the user to manipulate a particle-based fluid within a bounding box and watch as it responds realistically to outside stimuli. The user will be able to click on the surface of the fluid to create ripples and drag their mouse to create waves. It is also a goal of ours to allow the user to rotate and change the shape/size of the box. We would like to implement relaistic shading via ray marching. In order to do so, we will need to familiarize ourselves with the platform we choose to build on as well as HLSL/OpenGL, which we will rely on for shaders.</p>
 			<p>We hope to deliver an application that runs at an acceptable framerate. If all goes well, we could extend the capabilities of our simulation to include things like foam, spray, and realistic refelction/refraction. When it comes to quantifying the quility/performance of our system, the framerate and number of particles being simulated will be key factor. Depending on the lighting system we implement, I imagine the number of rays used and the number of bounces calculated for each ray will be determining factors for performance.</p>
 			<h2>Schedule</h2>
 
+			<h4>Week 1</h3>
+			<p>Understand physics, set up C++ framework, and basic grid.</p>
+			
+			<h4>Week 2</h3>
+			<p>Move scalar fields with the flow. Solve viscosity and enforce incompressibility.</p>
+
+			<h4>Week 3</h3>
+			<p></p>
+
 			<h2>Resources</h2>
 			Software Resources: Unity/Unreal game engine, OpenGL
 			<ul>
+				<li><a href="https://www.cs.cmu.edu/afs/cs/academic/class/15462-s13/www/lec_slides/StamFluidforGames.pdf">Real-Time Fluid Dynamics for Games by Joe Stam</a></li>
 				<li><a href="https://www.youtube.com/watch?v=rSKMYc1CQHE">Coding Adventure: Simulating Fluids</a></li>
 				<li><a href="https://www.youtube.com/watch?v=kOkfC5fLfgE">Coding Adventure: Rendering Fluids</a></li>
 				<li><a href="https://web.archive.org/web/20140725014123/https://docs.nvidia.com/cuda/samples/5_Simulations/particles/doc/particles.pdf">Particle Simulation Using CUDA</a></li>
 				<li><a href="https://matthias-research.github.io/pages/publications/sca03.pdf">Particle-Based Fluid Simulation for Interactive Applications</a></li>
 				<li><a href="https://shaderbits.com/blog/creating-volumetric-ray-marcher">Creating a Volumetric Ray Marcher</a></li>
 				<li><a href="https://www.cs.carleton.edu/cs_comps/0405/shape/marching_cubes.html">An Implementation of the Marching Cubes Algorithm</a></li>
+				<li><a href="https://unusualinsights.github.io/fluid_tutorial/">Physics-Based Simulation & Animation of Fluids</a></li>
 			</ul>
 		</div>
 	</body>
